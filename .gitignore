@@ -1,0 +1,23 @@
+# Dependencias
+node_modules/
+
+# Compilados y artefactos de build
+dist/
+build/
+*.tsbuildinfo
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Registros y diagnósticos
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo e IDEs
+.DS_Store
+Thumbs.db

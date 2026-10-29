@@ -1,0 +1,35 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/mcp-config.v1.json",
+  "mcpServers": {
+    "evaluati-on-sqlite-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "--db-path",
+        "./databases/seeds/filesystem_metadata.db"
+      ],
+      "env": {
+        "SQLITE_READONLY": "false",
+        "EVALUATION_LAYER_SCOPE": "L1_TO_L4_HYDRATION"
+      },
+      "description": "Servidor MCP SQLite para metadatos de sistemas de archivos virtuales e hidratación mecánica de cascarones vacíos (filesystem_metadata.db)."
+    },
+    "evaluati-on-mysql-telemetry": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-mysql"
+      ],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "killua_telemetry_svc",
+        "MYSQL_PASSWORD": "${MYSQL_TELEMETRY_PASSWORD}",
+        "MYSQL_DATABASE": "evaluation_telemetry",
+        "MYSQL_SSL": "false"
+      },
+      "description": "Servidor MCP MySQL para almacenamiento forense de eventos de telemetría, métricas ejecutivas y reproducción Time-Machine (evaluation_telemetry)."
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@evaluati-on/brand-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de identidad visual institucional, tokens de color y componente SVG EvaluationBrandLogo para EvaluaTI-ON_Killua_V1.0",
+  "type": "module",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}

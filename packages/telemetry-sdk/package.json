@@ -1,0 +1,22 @@
+{
+  "name": "@evaluati-on/telemetry-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SDK Forense de Telemetría, detección anti-cheat de cadencia/pegado, métricas ejecutivas y Time-Machine para EvaluaTI-ON_Killua_V1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@evaluati-on/shared-types": "*"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}

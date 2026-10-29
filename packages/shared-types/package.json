@@ -1,0 +1,16 @@
+{
+  "name": "@evaluati-on/shared-types",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contrato universal de tipos, Shadow State JSON (InfrastructureState), tickets de misión y telemetría para EvaluaTI-ON_Killua_V1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  }
+}
